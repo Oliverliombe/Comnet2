@@ -9,8 +9,13 @@ Category: Informational                                        O. Molua
 
 Abstract
 
-   Communication between earth and Mars has been a very challenging aspect
-   in the past years. 
+   In this group work, we take a look at the challenges faced by space 
+   communication. More and more exploration of the Mars means better 
+   forms for communication like, the transfer of packets from Earth to 
+   Mars. Different factor affects the smooth packet transfer such as time, 
+   distance and Sun. Due to distance from Earth to Mars, some packets are 
+   damaged, and these damaged packets requires retransmission. The retransmission 
+   is addressed in a way that, it should take less time to be retransmitted. 
 
 Status of This Memo
 
