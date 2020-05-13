@@ -116,16 +116,92 @@ distance to reach in Mars.
 
 4. Proposed Solutions
 Theoretical
-The existing Internet is based on TCP/IP protocol suite and assures end to end connectivity, provided that the latencies are relatively small, the connectivity is continuous and the bidirectional data rates are high. However, in many networks such as the interplanetary communications this is not the case; propagation delay can reach up to minutes or even hours, the data rates are asymmetric and relatively low and there is an intermittent connectivity.
+The existing Internet is based on TCP/IP protocol suite and assures end to end connectivity,
+provided that the latencies are relatively small, the connectivity is continuous and
+the bidirectional data rates are high. However, in many networks such as the interplanetary
+communications this is not the case; propagation delay can reach up to minutes
+or even hours, the data rates are asymmetric and relatively low
+and there is an intermittent connectivity.
 
 4.1. Forward Error Correction
-Typical in wireless applications or when satellites are used for transmission, error detection alone is not enough. When errors are detected, using a checksum or cyclic redundancy check necessitates the retransmission of the damaged data. The problem is latency based on retransmission. The assumption is that 30 minutes assumes no retransmission, that the data arrives intact, which is highly unlikely. Thus 75min includes retransmission.  When data retransmission is costly and transmission errors are common, a more efficient scheme is Forward Error Correction (FEC). 
-If we do some calculations, 75 / 30 = 2.5 (retransmission rate of 150%). That means we need to retransmit 1.5 times the amount of data. This means that for every MB of data that we want to send we have to send 2.5MB of data. Thus, with 150% it takes us five times to send two things. In other words, at the moment for every 2MB of data we need to send 5MB of data.
-Reducing 75 to 45 means retransmission rate of 50%. With 50% it takes us three attempts to send one thing. For every 2MB of data we need to send 3MB of data. And that's what we want. 
+Typical in wireless applications or when satellites are used for transmission,
+error detection alone is not enough. When errors are detected, using a checksum
+or cyclic redundancy check necessitates the retransmission of the damaged data.
+The problem is latency based on retransmission. The assumption is that 30 minutes
+assumes no retransmission, that the data arrives intact, which is highly unlikely.
+Thus 75min includes retransmission.  When data retransmission is costly
+and transmission errors are common, a more efficient scheme is Forward Error Correction (FEC). 
+
+If we do some calculations, 75 / 30 = 2.5 (retransmission rate of 150%).
+That means we need to retransmit 1.5 times the amount of data.
+This means that for every MB of data that we want to send we have to send 2.5MB of data.
+Thus, with 150% it takes us five times to send two things.
+In other words, at the moment for every 2MB of data we need to send 5MB of data.
+Reducing 75 to 45 means retransmission rate of 50%.
+
+With 50% it takes us three attempts to send one thing.
+For every 2MB of data we need to send 3MB of data. And that's what we want. 
 By this we are reducing the number of retransmissions, and thus reducing latency.
 
+So Forward Error Correction involves transmitting extra data so that certain errors
+can be corrected without data being retransmitted. This approach depends on a measure
+called Hamming Distance. Hamming distance is a metric for comparing two bit strings
+of the same length. For example consider the following two bit strings 000 and 011.
+The Hamming distance between these two is two strings of equal length is simply
+the number of positions in which their values differ. So the first are both 0s,
+but then we have a 0 and a 1, so that is one position where they differ.
+And the last position they also differ. So the distance between these two bit strings: d(000, 011)=2.
+Given this knowledge, we can talk about forward error correction.
+
+Forward error correction requires the creation of an error correcting code.
+Specifically, both the sender and the receiver will have a dictionary of code words.
+For example, the dictionary maps each possible two bit sequence to a 5 bit code word.
+So, note that there are many bit strings of length 5 that are not code words.
+This will allow us to detect errors. Let’s encode the following sequence.
+This sequence of bits 01 00 01 11 11 10 00 10 is what the sender wants to send.
+It will use this dictionary to transform each 2 bit sequence into a 5 bit code word.
+Now this longer bit string is what will actually be transmitted.
+So we see that the length of the code words incurs a cost
+in terms of the number of bits that need to be sent.
+But by sending these extra bits, we buy the ability to correct certain errors
+without needing to retransmit anything.
+Here's how this works. Let’s say that of each of these code words that we send,
+some are received okay, but some are garbled. For example, perhaps the first one (01) is received
+exactly as it was sent (11100) but this next one (00) will be garbled slightly
+and instead of receiving (00000) what is received is (10000).
+The rest in the transmission will be a mixture of garbled and correctly received code words.
+The receiver has no knowledge about where errors occurred. It only knows that it has received these bits.
+However the receiver also has this same dictionary. So it will try to decode each codeword
+into its corresponding two bit sequence. If the codeword that it reads is in the dictionary
+then this mapping process goes very smoothly. However, if there is an invalid code word,
+or arguably not a code word, it’s not in our dictionary, we take this sequence of 5 bits (10000)
+and compare it to each of the valid code words to get an idea of which one it is most
+likely to have been. We will do this using Hamming distance. So the Hamming distance
+between this bit string (10000) and the first code word (0000) is 1,
+because there is only 1 bit different between the code word and this actual bit string.
+The distance between this string and the next code word may be 2, etc.
+So these are the Hamming distances between these code words and this invalid code word.
+Having multiple bit errors is less likely than having fewer bit errors.
+Thus whichever of the code words is the closest to the invalid code word in terms of
+Hamming distance is the one that we will view as most likely.
+So we will interpret this (10000) as having been a sequence of (00000)
+which using our dictionary decodes to 00. And we know that that is what the sender initially sent,
+so every thing worked out fine in this case.
+
+
 4.2. Relay Station
-In normal internet, sending a file (an image, for example) from one computer to another using the Internet's File Transfer Protocol (FTP) involves establishing a connection between the source and destination machines, and then passing the file across in chunks. But if a rover on the Martian surface wants to send a file back to earth, this is an inefficient way of doing it. It would make more sense for the rover to hand the whole file over to a lander, which could pass it in chunks to orbiting relay satellites for transmission home.
-Store and forward is a telecommunications technique in which information is sent to an intermediate station where it is kept and sent at a later time to the final destination or to another intermediate station. The intermediate station verifies the integrity of the message before forwarding it. In general, this technique is used in networks with intermittent connectivity, especially in the wilderness or environments requiring high mobility. It may also be preferable in situations when there are long delays in transmission and variable and high error rates, or if a direct, end-to-end connection is not available.
+In normal internet, sending a file (an image, for example) from one computer
+to another using the Internet's File Transfer Protocol (FTP) involves establishing
+a connection between the source and destination machines, and then passing the file across in chunks.
+But if a rover on the Martian surface wants to send a file back to earth,
+this is an inefficient way of doing it. It would make more sense for the rover to hand
+the whole file over to a lander, which could pass it in chunks to orbiting relay satellites for transmission home.
 
+Store and forward is a telecommunications technique in which information is sent to an intermediate station
+where it is kept and sent at a later time to the final destination or to another intermediate station.
+The intermediate station verifies the integrity of the message before forwarding it.
 
+In general, this technique is used in networks with intermittent connectivity,
+especially in the wilderness or environments requiring high mobility.
+It may also be preferable in situations when there are long delays in transmission
+and variable and high error rates, or if a direct, end-to-end connection is not available.
