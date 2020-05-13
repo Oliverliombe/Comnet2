@@ -1,21 +1,16 @@
-Internet Architecture Board (IAB)                            H. Flanagan
-Request for Comments: 7322                                     S. Ginoza
-Obsoletes: 2223                                               RFC Editor
-Category: Informational                                   September 2014
+Group Assignment Work                                          G. Cook
+Request for Comments:                                          O. Molua
+Obsoletes:                                                     TUT - CN2
+Category: Informational                                        May 2020
 ISSN: 2070-1721
 
 
-                            RFC Style Guide
+                            Uplink To Mars (Latency)
 
 Abstract
 
-   This document describes the fundamental and unique style conventions
-   and editorial policies currently in use for the RFC Series.  It
-   captures the RFC Editor's basic requirements and offers guidance
-   regarding the style and structure of an RFC.  Additional guidance is
-   captured on a website that reflects the experimental nature of that
-   guidance and prepares it for future inclusion in the RFC Style Guide.
-   This document obsoletes RFC 2223, "Instructions to RFC Authors".
+   Communication between earth and Mars has been a very challenging aspect
+   in the past years. 
 
 Status of This Memo
 
