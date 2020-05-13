@@ -71,16 +71,16 @@ Group Assignment             Informational                     [Page 2]
 
 
 
-3. challenges 
-setting up a communication between earth and mars is not really a trivial 
-matter becuse of the wide varieties of obostacles such as vast distance 
-between earth and mars, noise from sun,lon time delays and others 
-disturbances.However, mainly our concerns are vast distance from eath to 
-Mars, noise from the sun and long time delays issues.
+3. Challenges 
+Setting up a communication between Earth and Mars is not really a trivial 
+matter because of the wide varieties of obstacles such as vast distance 
+between Earth and Mars, noise from the Sun, long time delays and other 
+disturbances. However, mainly our concerns are the vast distance from Eath to 
+Mars, noise from the Sun and long time delays.
 
-3.1 vast distance
-In communication system distance palys a vital role, when signal traveling 
-through the space become a bit tricky.abc 
+3.1 Vast Distance
+In communication systems, distance plays a vital role, when signal traveling 
+through space become a bit tricky. 
 
 
 4. Proposed Solutions
