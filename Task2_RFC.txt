@@ -1,5 +1,6 @@
 Group Assignment Work                                          G. Cook
-Category: Informational                                        
+Category: Informational                                        O. Molua
+                                                               M. Khalek
                                                         Group Submission
                                                                May 2020
 
@@ -39,17 +40,19 @@ Copyright Notice
 
 Table of Contents
 
-   1. Introduction ....................................................2
-   2. Challenges ......................................................3
-      2.1. Vast Distance ..............................................3
-      2.2. Noise from Sun .............................................3
-      2.3. Long Time delays ...........................................3
-   3. Proposed Solutions ..............................................3
-      3.1. Forward Error Correction ...................................9
-      3.2. Relay Station .............................................10
-   4. References .....................................................20
-      4.1. Normative References ......................................20
-      4.2. Informative References ....................................20
+   1. Introduction (Oliver)............................................3
+   2. Methods of Communication ........................................4
+   3. Challenges ......................................................5
+      3.1. Vast Distance ..............................................5
+      3.2. Noise from Sun .............................................5
+      3.3. Long Time delays ...........................................6
+   4. Proposed Solutions ..............................................8
+      4.1. Forward Error Correction ...................................9
+      4.2. Relay Station .............................................10
+   5. Security Considerations ........................................20
+   6. References .....................................................20
+      6.1. Normative References ......................................20
+      6.2. Informative References ....................................20
 
 
 
@@ -88,8 +91,16 @@ Group Assignment             Informational                     [Page 2]
    of the attempted areas  we looked at are, forward error correction (FEC), and also the 
    use of relay stations to assist in smooth transmissions.
    
-                                                                      [Page 2]
-3. Challenges 
+2.  Methods for Communication
+    
+
+
+
+
+
+
+3.Challenges 
+
 Setting up a communication between Earth and Mars is not really a trivial 
 matter because of the wide varieties of obstacles such as vast distance 
 between Earth and Mars, noise from the Sun, long time delays and other 
@@ -97,13 +108,33 @@ disturbances. However, mainly our concerns are the vast distance from Eath to
 Mars, noise from the Sun and long time delays.
 
 3.1 Vast Distance
+
 In communication systems, distance plays a vital role, when signal traveling 
 through space become a bit tricky.The distance from earth to mars is 140 million 
 miles (225 million kilometers) according to NASA, though the distance is changing 
 frequently [1]. Hence, the signal needs to travel approximately aforementioned 
-distance to reach in Mars. 
+distance to reach in Mars.We know the speed of light is 3x10  km/sec. Assuming 
+the signal traveling with the same speed of light. Communication between Earth 
+and Mars goes through satellite because of the distance between the is also a 
+substantial delay. Therefore, it takes approximately between 3 and 22 minutes 
+for reaching information from one end to another. Another issue is variable 
+distance between Earth and Mars which varies from 50 -400 million kilometers 
+might affected on transmitted signals [2].
 
-                                                                    [Page 3]
+3.2 Noise from Sun
+Deep space communication blatantly affected by the sun as it a kind noise source. 
+Sun is known as the primary source of solar noise. The radiates wide range of signal
+frequency we use for communication the sun radiates noise which vary with time. 
+Usually sun cycles repeat after 11 years in the orbit during the peak of the cycle 
+there occurs a strong interference with transmitted signal [3].
+3.3 Long time delay
+
+Delay also badly effect in distance communication as signal is transmitting as an 
+electromagnetic radiation.it is not like normal communication as we communicate by 
+cellular network. 
+
+
+
 
 4. Proposed Solutions
 Theoretical
