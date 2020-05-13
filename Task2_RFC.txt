@@ -1,6 +1,5 @@
 Group Assignment Work                                          G. Cook
-Category: Informational                                        O. Molua
-                                                               M. Khalek
+Category: Informational                                        
                                                         Group Submission
                                                                May 2020
 
@@ -40,19 +39,17 @@ Copyright Notice
 
 Table of Contents
 
-   1. Introduction (Oliver)............................................3
-   2. Methods of Communication (Oliver)................................4
-   3. Challenges (Md Khalek)...........................................5
-      3.1. Vast Distance ..............................................5
-      3.2. Noise from Sun .............................................5
-      3.3. Long Time delays ...........................................6
-   4. Proposed Solutions (Glenn).......................................8
-      4.1. Forward Error Correction ...................................9
-      4.2. Relay Station .............................................10
-   5. Security Considerations ........................................20
-   6. References .....................................................20
-      6.1. Normative References ......................................20
-      6.2. Informative References ....................................20
+   1. Introduction ....................................................2
+   2. Challenges ......................................................3
+      2.1. Vast Distance ..............................................3
+      2.2. Noise from Sun .............................................3
+      2.3. Long Time delays ...........................................3
+   3. Proposed Solutions ..............................................3
+      3.1. Forward Error Correction ...................................9
+      3.2. Relay Station .............................................10
+   4. References .....................................................20
+      4.1. Normative References ......................................20
+      4.2. Informative References ....................................20
 
 
 
@@ -91,14 +88,7 @@ Group Assignment             Informational                     [Page 2]
    of the attempted areas  we looked at are, forward error correction (FEC), and also the 
    use of relay stations to assist in smooth transmissions.
    
-2.  Methods for Communication
-    
-
-
-
-
-
-
+                                                                      [Page 2]
 3. Challenges 
 Setting up a communication between Earth and Mars is not really a trivial 
 matter because of the wide varieties of obstacles such as vast distance 
@@ -113,6 +103,7 @@ miles (225 million kilometers) according to NASA, though the distance is changin
 frequently [1]. Hence, the signal needs to travel approximately aforementioned 
 distance to reach in Mars. 
 
+                                                                    [Page 3]
 
 4. Proposed Solutions
 Theoretical
