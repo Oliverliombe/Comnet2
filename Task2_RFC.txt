@@ -83,6 +83,18 @@ In communication system distance palys a vital role, when signal traveling
 through the space become a bit tricky.
 
 
+4. Proposed Solutions
+Theoretical
+The existing Internet is based on TCP/IP protocol suite and assures end to end connectivity, provided that the latencies are relatively small, the connectivity is continuous and the bidirectional data rates are high. However, in many networks such as the interplanetary communications this is not the case; propagation delay can reach up to minutes or even hours, the data rates are asymmetric and relatively low and there is an intermittent connectivity.
 
+4.1. Forward Error Correction
+Typical in wireless applications or when satellites are used for transmission, error detection alone is not enough. When errors are detected, using a checksum or cyclic redundancy check necessitates the retransmission of the damaged data. The problem is latency based on retransmission. The assumption is that 30 minutes assumes no retransmission, that the data arrives intact, which is highly unlikely. Thus 75min includes retransmission.  When data retransmission is costly and transmission errors are common, a more efficient scheme is Forward Error Correction (FEC). 
+If we do some calculations, 75 / 30 = 2.5 (retransmission rate of 150%). That means we need to retransmit 1.5 times the amount of data. This means that for every MB of data that we want to send we have to send 2.5MB of data. Thus, with 150% it takes us five times to send two things. In other words, at the moment for every 2MB of data we need to send 5MB of data.
+Reducing 75 to 45 means retransmission rate of 50%. With 50% it takes us three attempts to send one thing. For every 2MB of data we need to send 3MB of data. And that's what we want. 
+By this we are reducing the number of retransmissions, and thus reducing latency.
+
+4.2. Relay Station
+In normal internet, sending a file (an image, for example) from one computer to another using the Internet's File Transfer Protocol (FTP) involves establishing a connection between the source and destination machines, and then passing the file across in chunks. But if a rover on the Martian surface wants to send a file back to earth, this is an inefficient way of doing it. It would make more sense for the rover to hand the whole file over to a lander, which could pass it in chunks to orbiting relay satellites for transmission home.
+Store and forward is a telecommunications technique in which information is sent to an intermediate station where it is kept and sent at a later time to the final destination or to another intermediate station. The intermediate station verifies the integrity of the message before forwarding it. In general, this technique is used in networks with intermittent connectivity, especially in the wilderness or environments requiring high mobility. It may also be preferable in situations when there are long delays in transmission and variable and high error rates, or if a direct, end-to-end connection is not available.
 
 
