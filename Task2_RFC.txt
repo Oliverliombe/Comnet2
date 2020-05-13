@@ -1,9 +1,8 @@
 Group Assignment Work                                          G. Cook
-Request for Comments:                                          O. Molua
-                                                               Md Abdul Khalek
-Obsoletes:                                                     TUT - CN2
-Category: Informational                                        May 2020
-ISSN: 2070-1721
+Category: Informational                                        O. Molua
+                                                               M. Khalek
+                                                        Group Submission
+                                                               May 2020
 
 
                             Uplink To Mars (Latency)
@@ -31,8 +30,7 @@ Status of This Memo
 
 Copyright Notice
 
-   Copyright (c) 2014 IETF Trust and the persons identified as the
-   document authors.  All rights reserved.
+   Copyright (c) 2020 Group authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
    Provisions Relating to IETF Documents
@@ -57,7 +55,7 @@ Table of Contents
    3. Challenges ......................................................5
       3.1. Vast Distance ..............................................5
       3.2. Noise from Sun .............................................5
-      3.3. Long TIME delays ...........................................6
+      3.3. Long Time delays ...........................................6
    4. Proposed Solutions ..............................................8
       4.1. Forward Error Correction ...................................9
       4.2. Theoretical explanation ...................................10
