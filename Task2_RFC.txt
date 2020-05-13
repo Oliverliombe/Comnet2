@@ -159,3 +159,89 @@ RFC 7322                     RFC Style Guide              September 2014
 
 
 
+We are not expected to solve the physical layer problems.
+Our task is to address the latency issue caused by propagation time.
+How the physical and link layers work is not our problem in all aspects except for retransmissions.
+
+==============================================
+
+Assuming linear transmission
+E-------X---------M
+
+X = relay station
+
+Furthest distance = 401 million km
+Speed of light = 299,792 km per second
+
+Uing optic fibre, we need to consider the refractive index of glass (1.47)
+
+Speed = distance / time (for a distance of 1 km)
+= 4.9 microseconds
+
+for 401 mil km
+latency = 4.9 x 401
+= 1964.9 s
+
+latency = 32.7 min
+
+Assuming the relay station is placed at half the distance between Earth and Mars (latency = 16.35 min)
+
+For packet damage, the time of retransmission will be 32.7 + 16.35 = 49 min
+
+https://www.m2optics.com/blog/bid/70587/Calculating-Optical-Fiber-Latency
+
+Calculating Optical Fiber Latency
+Latency is a term that is used to describe a time delay in a transmission medium such as a vacuum, air, or a fiber optic waveguide. In free space, light travels at 299,792,458 meters per second. This equates to 299.792 meters per microsecond (µs) or 3.34µs per kilometer. In fiber optics, the latency of the fiber is the time it takes for light ...
+www.m2optics.com
+
+
+=======================================================
+
+Our solution has to involve a combination of position and functionality of relay station(s) plus the functioning of error correction. Propagation time from Mars to Earth is anywhere from 3 to 30 minutes. That is, assuming no error correction and everything fine = 30min. If I add 50% overhead to the data, then in theory it would take 50% longer to send, because we are increasing the amount of data to send by 50%, which means I would increase the time to send to 45min. But then the question is, by adding a mere 50% overhead, is that enough to account for data loss. So with 50% overhead, does that mean I can lose up to 50% of the original data? i.e. how much of this can I lose and still be able to piece back together the original message.
+
+If we forget fibre and assume radio.
+
+To address packet damage = packet loss, introduce relay stations (put a bunch of relay stations).
+If we increase the number of hops then we decrease the data loss. If we have relay stations closer to each other then less loss. But determine, too, how much delay does a relay station introduce.
+
+The relay station/router needs to be a custom solution that works for the application, because typically it will be end-end. Error correction and handling happens at the TCP level, not IP. Normally a router just operates at IP and the two hosts (client-server) take care of the TCP stuff.
+Generally a router will have no idea if your file is corrupted or not.
+
+And we don’t really need a router because it’s end-to-end transmission. The purpose is to retransmit the signal. So we can have a repeater. The repeater just forwards a ‘boosted’ version of it. So we can have all repeaters, but there is no checking along the way that data is ok. Whereas if we had all relay stations we can be sure that the data is intact, but with delay. Or we could consider a combination of relay stations and repeaters.
+
+If there is no significant delay just have all relay stations. Cost is no issue here since we are launching satellites into space (which is already expensive, so who cares about cost difference between repeater or relay station. Latency is our main goal.
+
+What is the furthest can communicate from earth to satellite orbiting the earth and satellite into space, how far can that go reliably before you need a relay station?
+
+401 mil km / distance can transmit without signifcant data loss will give us the number of satellites we need.
+For example, a relay station every 75m km (5 relay stations in total);  (401 / 75 = 5) (5 satelites and 6 hops)
+
+Best case scenario earth-relay, or relay-relay = 3min.
+With 6 hops worst case scenario earth-relay, or relay-relay = 45min.
+
+
+================================
+
+Assumption = no voice, because too much delay
+
+75 / 30 = 2.5 (retransmission rate of 150%). That means I need to retransmission 1.5 the amount of data. This means that for every MB of data that I want to send I have to send 2.5MB of data.
+With 150% it takes me five times to send two things.
+
+Reducing 75 to 45 means retransmission rate of 50%. With 50% it takes me three attempts to send one thing. For every 2MB of data you need to send 3MB of data. And that's what we want. Because at the moment for every MB of data we need to send 5MB of data.
+
+
+By this we are reducing the number of retransmissions.
+
+Because the assumption is that retransmission is unavoidable. 30 minutes assumes no retransmission, that the data arrives intact, which is highly unlikely. Thus 45min includes retransmission.
+
+The problem is latency based on retransmission.
+The solution is forward error correction.
+
+The result we need is very specific: 45. But we have no way of calculating without knowing the variables.
+
+The relay station / proxy will also reduce the retransmission because it is less distance. But with no numbers we cannot calculate by how much it helps.
+
+Buffering is part of the relay station solution.
+
+QoS is only relevant if we have different types of data, and we want to prioritise some data, meaning we can meet the criteria of 45min for some data but not others. UDP is only applicable for streaming type applications, which is kind of impractical anyway such as gaming, and Skype and Facetime.
+
