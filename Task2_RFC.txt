@@ -45,8 +45,8 @@ Table of Contents
       2.2. Noise from Sun ............................................4
       2.3. Long Time delays ..........................................4
    3. Proposed Solutions .............................................5
-      4.1. Forward Error Correction ..................................5
-      4.2. Relay Station .............................................6
+      3.1. Forward Error Correction ..................................5
+      3.2. Relay Station .............................................6
    4. References .....................................................7
       
 
@@ -223,7 +223,8 @@ And we don’t really need a router because it’s end-to-end transmission. The 
 
 If there is no significant delay just have all relay stations. Cost is no issue here since we are launching satellites into space (which is already expensive, so who cares about cost difference between repeater or relay station. Latency is our main goal.
 
-What is the furthest can communicate from earth to satellite orbiting the earth and satellite into space, how far can that go reliably before you need a relay station?
+What is the furthest can communicate from earth to satellite orbiting the earth
+and satellite into space, how far can that go reliably before you need a relay station?
 
 401 mil km / distance can transmit without signifcant data loss will give us the number of satellites we need.
 For example, a relay station every 75m km (5 relay stations in total);  (401 / 75 = 5) (5 satelites and 6 hops)
