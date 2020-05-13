@@ -17,10 +17,9 @@ Abstract
    damaged, and these damaged packets requires retransmission. The retransmission 
    is addressed in a way that, it should take less time to be retransmitted. 
 
-Status of This Memo
+Status of this Memo
 
    This document is a group exam assignment meant for educational purposes.
-   
    It represents the consensus of the group.
    
 Copyright Notice
