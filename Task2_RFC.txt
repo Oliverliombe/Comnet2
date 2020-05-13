@@ -48,8 +48,7 @@ Table of Contents
    3. Proposed Solutions .............................................5
       4.1. Forward Error Correction ..................................5
       4.2. Relay Station .............................................6
-   4. Security Considerations ........................................7
-   5. References .....................................................8
+   4. References .....................................................7
       
 
 
@@ -234,7 +233,7 @@ Best case scenario earth-relay, or relay-relay = 3min.
 With 6 hops worst case scenario earth-relay, or relay-relay = 45min.
 
 
-References
+4. References
 [1] https://www.google.com/search?sxsrf=ALeKk03bWk-dunvlrpSno3xMhDHZJBOkew%3A1589393034984&ei=ija8XqvQO4yVmwXcspuQAw&q=distance+from+earth+to+mars+in+miles&oq=distance+from+earth+to+mars+in+miles+&gs_lcp=CgZwc3ktYWIQARgBMgQIIxAnMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQRzoFCAAQywFQ-PMFWM-EBmDWngZoAXABeACAAYwBiAHQA5IBAzAuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab
 [2] https://www.forbes.com/sites/ellistalton/2018/09/06/communications-infrastructure-on-mars-could-be-the-envy-of-earth/#54affe3f3706
 [3] https://books.google.fi/books?id=PNEGt99uMBwC&pg=RA4-PA2&lpg=RA4-PA2&dq=is+sun+noise+source&source=bl&ots=-WLSeek2hW&sig=ACfU3U1XF0mXsLfKh2saHgGveRAB3I4FdQ&hl=sv&sa=X&ved=2ahUKEwj3i6iyzLHpAhVNw4sKHRnRD1sQ6AEwEnoECAwQAQ#v=onepage&q=is%20sun%20noise%20source&f=false
