@@ -117,7 +117,10 @@ Usually sun cycles repeat after 11 years in the orbit during the peak of the cyc
 there occurs a strong interference with transmitted signal [3].
 
 2.3 Long time delay
-Long delay is due to the long the distance involved and navigating around the sun as we cannot transmit directly through the sun, we have to go around. The long delay time is also be of damaged packets and retransmission required. Due to electromagnetic radiation, it is not like normal communication as we communicate by cellular network. 
+Long delay is due to the long the distance involved and navigating around the sun as
+we cannot transmit directly through the sun, we have to go around.
+The long delay time is also be of damaged packets and retransmission required.
+Due to electromagnetic radiation, it is not like normal communication as we communicate by cellular network. 
 
 3. Proposed Solutions
 Theoretical
