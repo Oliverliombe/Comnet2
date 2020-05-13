@@ -63,10 +63,7 @@ Group Assignment             Informational                     [Page 2]
                              Uplink To Mars                     May 2020
 
 
-   Appendix A. Related Procedures ....................................23
-   Contributors ......................................................24
-   Authors' Addresses ................................................24
-
+   
 1.  Introduction
 
    The constant growth in technology gives the ability for extreme discoveries 
