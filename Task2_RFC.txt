@@ -80,7 +80,10 @@ Mars, noise from the Sun and long time delays.
 
 3.1 Vast Distance
 In communication systems, distance plays a vital role, when signal traveling 
-through space become a bit tricky. 
+through space become a bit tricky.The distance from earth to mars is 140 million 
+miles (225 million kilometers) according to NASA, though the distance is changing 
+frequently [1]. Hence, the signal needs to travel approximately aforementioned 
+distance to reach in Mars. 
 
 
 4. Proposed Solutions
