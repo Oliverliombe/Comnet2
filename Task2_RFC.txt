@@ -90,16 +90,8 @@ Group Assignment             Informational                     [Page 2]
    packets during transfer from Earth to Mars (Uplink to Mars) with focus on latency. Some 
    of the attempted areas  we looked at are, forward error correction (FEC), and also the 
    use of relay stations to assist in smooth transmissions.
-   
-2.  Methods for Communication
-    
 
-
-
-
-
-
-3.Challenges 
+2.Challenges 
 
 Setting up a communication between Earth and Mars is not really a trivial 
 matter because of the wide varieties of obstacles such as vast distance 
@@ -107,7 +99,7 @@ between Earth and Mars, noise from the Sun, long time delays and other
 disturbances. However, mainly our concerns are the vast distance from Eath to 
 Mars, noise from the Sun and long time delays.
 
-3.1 Vast Distance
+2.1 Vast Distance
 
 In communication systems, distance plays a vital role, when signal traveling 
 through space become a bit tricky.The distance from earth to mars is 140 million 
@@ -121,31 +113,28 @@ for reaching information from one end to another. Another issue is variable
 distance between Earth and Mars which varies from 50 -400 million kilometers 
 might affected on transmitted signals [2].
 
-3.2 Noise from Sun
+2.2 Noise from Sun
 Deep space communication blatantly affected by the sun as it a kind noise source. 
 Sun is known as the primary source of solar noise. The radiates wide range of signal
 frequency we use for communication the sun radiates noise which vary with time. 
 Usually sun cycles repeat after 11 years in the orbit during the peak of the cycle 
 there occurs a strong interference with transmitted signal [3].
-3.3 Long time delay
 
-Delay also badly effect in distance communication as signal is transmitting as an 
-electromagnetic radiation.it is not like normal communication as we communicate by 
-cellular network. 
+2.3 Long time delay
+Long delay is due to the long the distance involved and navigating around the sun as we cannot transmit directly through the sun, we have to go around. The long delay time is also be of damaged packets and retransmission required. Due to electromagnetic radiation, it is not like normal communication as we communicate by cellular network. 
 
-
-
-
-4. Proposed Solutions
+3. Proposed Solutions
 Theoretical
-The existing Internet is based on TCP/IP protocol suite and assures end to end connectivity,
+The existing Internet on earth is based on TCP/IP protocol suite and assures end to end connectivity,
 provided that the latencies are relatively small, the connectivity is continuous and
 the bidirectional data rates are high. However, in many networks such as the interplanetary
 communications this is not the case; propagation delay can reach up to minutes
 or even hours, the data rates are asymmetric and relatively low
 and there is an intermittent connectivity.
 
-4.1. Forward Error Correction
+Our solution has to involve a combination of position and functionality of relay station(s) plus the functioning of error correction. Propagation time from Mars to Earth is anywhere from 3 to 30 minutes. That is, assuming no error correction and everything fine = 30min. If we add 50% overhead to the data, then in theory it would take 50% longer to send, because we are increasing the amount of data to send by 50%, which means we would increase the time to send to 45min. But then the question is, by adding a mere 50% overhead, is that enough to account for data loss. So with 50% overhead, does that mean that we can lose up to 50% of the original data? i.e. how much of this can we lose and still be able to piece back together the original message.
+
+3.1 Forward Error Correction
 Typical in wireless applications or when satellites are used for transmission,
 error detection alone is not enough. When errors are detected, using a checksum
 or cyclic redundancy check necessitates the retransmission of the damaged data.
@@ -211,7 +200,7 @@ which using our dictionary decodes to 00. And we know that that is what the send
 so every thing worked out fine in this case.
 
 
-4.2. Relay Station
+3.2. Relay Station
 In normal internet, sending a file (an image, for example) from one computer
 to another using the Internet's File Transfer Protocol (FTP) involves establishing
 a connection between the source and destination machines, and then passing the file across in chunks.
@@ -223,7 +212,34 @@ Store and forward is a telecommunications technique in which information is sent
 where it is kept and sent at a later time to the final destination or to another intermediate station.
 The intermediate station verifies the integrity of the message before forwarding it.
 
+To address packet damage = packet loss, introduce relay stations (put a bunch of relay stations).
+If we increase the number of hops then we decrease the data loss. If we have relay stations closer to each other then less loss. But determine, too, how much delay does a relay station introduce.
+
 In general, this technique is used in networks with intermittent connectivity,
 especially in the wilderness or environments requiring high mobility.
 It may also be preferable in situations when there are long delays in transmission
 and variable and high error rates, or if a direct, end-to-end connection is not available.
+
+The relay station/router needs to be a custom solution that works for the application, because typically it will be end-end. Error correction and handling happens at the TCP level, not IP. Normally a router just operates at IP and the two hosts (client-server) take care of the TCP stuff.
+Generally a router will have no idea if your file is corrupted or not.
+
+And we don’t really need a router because it’s end-to-end transmission. The purpose is to retransmit the signal. So we can have a repeater. The repeater just forwards a ‘boosted’ version of it. So we can have all repeaters, but there is no checking along the way that data is ok. Whereas if we had all relay stations we can be sure that the data is intact, but with delay. Or we could consider a combination of relay stations and repeaters.
+
+If there is no significant delay just have all relay stations. Cost is no issue here since we are launching satellites into space (which is already expensive, so who cares about cost difference between repeater or relay station. Latency is our main goal.
+
+What is the furthest can communicate from earth to satellite orbiting the earth and satellite into space, how far can that go reliably before you need a relay station?
+
+401 mil km / distance can transmit without signifcant data loss will give us the number of satellites we need.
+For example, a relay station every 75m km (5 relay stations in total);  (401 / 75 = 5) (5 satelites and 6 hops)
+
+Best case scenario earth-relay, or relay-relay = 3min.
+With 6 hops worst case scenario earth-relay, or relay-relay = 45min.
+
+
+References
+[1] https://www.google.com/search?sxsrf=ALeKk03bWk-dunvlrpSno3xMhDHZJBOkew%3A1589393034984&ei=ija8XqvQO4yVmwXcspuQAw&q=distance+from+earth+to+mars+in+miles&oq=distance+from+earth+to+mars+in+miles+&gs_lcp=CgZwc3ktYWIQARgBMgQIIxAnMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQRzoFCAAQywFQ-PMFWM-EBmDWngZoAXABeACAAYwBiAHQA5IBAzAuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab
+[2] https://www.forbes.com/sites/ellistalton/2018/09/06/communications-infrastructure-on-mars-could-be-the-envy-of-earth/#54affe3f3706
+[3] https://books.google.fi/books?id=PNEGt99uMBwC&pg=RA4-PA2&lpg=RA4-PA2&dq=is+sun+noise+source&source=bl&ots=-WLSeek2hW&sig=ACfU3U1XF0mXsLfKh2saHgGveRAB3I4FdQ&hl=sv&sa=X&ved=2ahUKEwj3i6iyzLHpAhVNw4sKHRnRD1sQ6AEwEnoECAwQAQ#v=onepage&q=is%20sun%20noise%20source&f=false
+[4] https://www.economist.com/science-and-technology/1999/11/11/the-wire-of-the-worlds
+[5] https://en.wikipedia.org/wiki/Store_and_forward
+
