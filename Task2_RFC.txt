@@ -80,7 +80,7 @@ Mars, noise from the sun and long time delays issues.
 
 3.1 vast distance
 In communication system distance palys a vital role, when signal traveling 
-through the space become a bit tricky.
+through the space become a bit tricky.abc 
 
 
 4. Proposed Solutions
