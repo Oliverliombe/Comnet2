@@ -65,7 +65,27 @@ Group Assignment             Informational                     [Page 2]
 
 1.  Introduction
 
-   State writing intro here
+   The constant growth in technology gives the ability for extreme discoveries 
+   and explorations. One of this very ambitious exploration, is the settling of 
+   humans in Mars in the nearest future. Before now, lots of different space 
+   expeditions have been carried out, and this therefore means the explorers have 
+   to communicate with people on Earth. Space communication has been a very big 
+   challenge when it comes to transfer of data, based on vary factors, for example 
+   distance.
+   
+   The distance from Earth to Mars is very vast and the time taken from Earth to Mars 
+   differs. Both the Earth and Mars do orbit the Sun which also makes it challenging 
+   for communication due to noise produced by the Sun. The transfer of packets from 
+   Earth to Mars can sometimes fail and retransmission is needed. The idea of 
+   retransmission can also leads to time constraint causing human-to-human activities 
+   greatly unbearable. It is for this reason; attempting a proposed solution is highly 
+   required.
+   
+   In this group work, an attempted solution is advanced to address the problem of damaged 
+   packets during transfer from Earth to Mars (Uplink to Mars) with focus on latency. Some 
+   of the attempted areas  we looked at are, forward error correction (FEC), and also the 
+   use of relay stations to assist in smooth transmissions.
+
 
 
 
