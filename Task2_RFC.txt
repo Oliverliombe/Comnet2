@@ -90,6 +90,9 @@ Group Assignment             Informational                     [Page 2]
    packets during transfer from Earth to Mars (Uplink to Mars) with focus on latency. Some 
    of the attempted areas  we looked at are, forward error correction (FEC), and also the 
    use of relay stations to assist in smooth transmissions.
+   
+2.  Methods for Communication
+    
 
 
 
