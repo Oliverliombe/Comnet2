@@ -65,16 +65,19 @@ Group Assignment             Informational                     [Page 2]
 
 1.  Introduction
 
-   State writing intro here
+    As technology keeps growing rapidly, alot of things are bound to change
+    definitely. One of these changes is the settlement of humans on Mars. 
+    It sounds difficult, but not impossible. What is actually difficult is
+    solving the issue of Earth to Mars communication. In this group work,
+    an approach in trying to find proposed solution is attempted with the
+    need to address the problem of damaged packet in Earth to Mars transfer.
 
 
 
 
 
 3. challenges 
-setting up a communication between earth and mars is not really a trivial matter becuse of 
-the wide varieties of obostacles such as vast distance between earth and mars, noise from sun, 
-lon time delays and others disturbances.
+setting up a communication between earth and mars is not really a trivial matter becuse of the wide varieties of obostacles such as vast distance between earth and mars, noise from sun, lon time delays and others disturbances.
 
 
 
