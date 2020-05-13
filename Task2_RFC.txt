@@ -72,5 +72,7 @@ Group Assignment             Informational                     [Page 2]
 
 
 3. challenges 
+setting up a communication between earth and mars is not really a trivial matter becuse of the wide varieties of obostacles such as vast distance between earth and mars, noise from sun and lon time delays etc. 
+
 
 
