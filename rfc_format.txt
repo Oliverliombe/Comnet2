@@ -24,14 +24,14 @@ retransmission. The retransmission is addressed in a way that, it
 should take less time to be retransmitted.
 Table of Contents
 
-1. Introduction	1
-2. Challenges	2
-2.1. Vast Distance	2
-2.2. Noise from Sun	3
-3. Proposed Solutions	3
-3.1. Forward Error Correction	3
-3.2. Relay Station	5
-4. References	7
+1. Introduction	.................................................1
+2. Challenges	...................................................2
+  2.1. Vast Distance.............................................2
+  2.2. Noise from Sun	...........................................3
+3. Proposed Solutions............................................3
+  3.1. Forward Error Correction..................................3
+  3.2. Relay Station.............................................5
+4. References....................................................7
 
 1. Introduction
 The constant growth in technology gives the ability for extreme
