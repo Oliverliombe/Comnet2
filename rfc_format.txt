@@ -1,5 +1,14 @@
-Uplink To Mars (Latency)
-draft-earth2mars-00.txt
+
+<Working Group Name>		                      <Initial. Lastname>
+Internet Draft		                                <Affiliation>
+Intended status: <e.g., Informational>	          June 5, 2020
+Expires: December 2020
+
+
+
+                        Uplink To Mars (Latency)
+                        draft-earth2mars-00.txt
+
 Status of this Memo
 This document is a group exam assignment meant for educational
 purposes.
@@ -188,7 +197,7 @@ Internet-Draft	<Title> 	June 2020
 
 
 
-<Lastname>	Expires December 5, 2020	[Page 1]
+     <Lastname>	Expires December 5, 2020	[Page 1]
 
 <Working Group Name>		<Initial. Lastname>
 Internet Draft		<Affiliation>
