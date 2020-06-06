@@ -13,6 +13,7 @@ Status of this Memo
 This document is a group exam assignment meant for educational
 purposes.
 It represents the consensus of the group.
+
 Abstract
 In this group work, we take a look at the challenges faced by space
 communication. More and more exploration of the Mars means better
@@ -25,7 +26,7 @@ should take less time to be retransmitted.
 Table of Contents
 
 1. Introduction	.................................................1
-2. Challenges	..................................................2
+2. Challenges	...................................................2
   2.1. Vast Distance.............................................2
   2.2. Noise from Sun	...........................................3
 3. Proposed Solutions............................................3
