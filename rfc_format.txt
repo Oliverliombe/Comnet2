@@ -65,7 +65,7 @@ vast distance between Earth and Mars, noise from the Sun, long time
 delays and other disturbances. However, mainly our concerns are the
 vast distance from Earth to Mars, noise from the Sun and long time
 delays.
-2.1. Vast Distance
+2.1 Vast Distance
 In communication systems, distance plays a vital role. It is 
 particularly tricky when trying to establish communication 
 link between Earth and Mars since the average distance 
@@ -77,6 +77,8 @@ distance to reach Mars. We know the speed of light is 3x10^8 km/sec.
 Assuming the signal travels at the speed of light, it takes
 approximately 3 to 30 minutes for the information to reach the other
 end[2].
+2.2 Noise From Sun
+
 3. Proposed Solution
 Data propagation between Earth and Mars can be anywhere from 3 to 30
 minutes. This is assuming there are no errors in transmission which
