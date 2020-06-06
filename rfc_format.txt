@@ -66,13 +66,14 @@ delays and other disturbances. However, mainly our concerns are the
 vast distance from Earth to Mars, noise from the Sun and long time
 delays.
 2.1. Vast Distance
-In communication systems, distance plays a vital role. It's
-particularly tricky when trying to communicate between Earth and Mars
-since the distance between the two planets can be anywhere between
-50-400 million km. The actual distance depends on where Earth and
-Mars are respectively in their orbit around the Sun [1].
-Hence, the signal needs to travel approximately aforementioned
-distance to reach Mars. We know the speed of light is 3x10 km/sec.
+In communication systems, distance plays a vital role. It is 
+particularly tricky when trying to establish communication 
+link between Earth and Mars since the average distance 
+between these two planets 225 million km, and varies 
+between 54.6-401 million km. The distance variation between 
+Earth and Mars occurs due the orbital position around the Sun[1].
+Therefore, the signal needs to travel approximately aforementioned
+distance to reach Mars. We know the speed of light is 3x10^8 km/sec.
 Assuming the signal travels at the speed of light, it takes
 approximately 3 to 30 minutes for the information to reach the other
 end.
@@ -137,6 +138,12 @@ two planets are furthest from each other.
 [1]	What Is The Distance Between Earth And Mars?, 
 https://www.space.com/14729-spacekids-distance-earth-mars.html
 Accessed : 2 June 2020.
+
+[2] How Does the Mars base communicate with Earth?,
+https://www.mars-one.com/faq/technology/how-does-the-mars-base-communicate-with-earth?fbclid=IwAR0jzUgLD0JAOTIwEPIKp61JZZMAkwn3fISjH1TRD7ECobEBwz3NLilFigw#:~:te
+Accessed : 2 June 2020.
+
+
 [2]  https://books.google.fi/books?id=PNEGt99uMBwC&pg=PP1
 [3]  https://en.wikipedia.org/wiki/Store_and_forward
 Appendix
