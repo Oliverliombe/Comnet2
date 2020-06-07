@@ -12,7 +12,7 @@ Expires: December 2020
 Status of this Memo
   This document is a group exam assignment meant for educational
   purposes.
-  It represents the consensus of the group.
+     It represents the consensus of the group.
 
 Abstract
 In this group work, we take a look at the challenges faced by space
