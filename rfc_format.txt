@@ -125,7 +125,7 @@ kilometres, it will be 40 million kilometres. And this is only when the
 two planets are furthest from each other.
 4. References
 [1]	 https://www.space.com/14729-spacekids-distance-earth-mars.html
-[2]  https://www.webcitation.org/65iNkn800?url=http://www.aero.org/publications/crosslink/winter2002/04.html
+[2]  https://www.webcitation.org/65iNkn800
 [3]  https://en.wikipedia.org/wiki/Store_and_forward
 Appendix
 "include a "FEEDBACK" section in your final submission text where you
