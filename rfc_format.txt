@@ -53,16 +53,15 @@ Setting up a communication between Earth and Mars is not really a
 trivial matter because of the wide varieties of obstacles such as
 vast distance between Earth and Mars, noise from the Sun, long time
 delays and other disturbances. However, mainly our concerns are the
-vast distance from Earth to Mars, noise from the Sun and long time
-delays.
+vast distance from Earth to Mars and long time delays.
 2.1. Vast Distance
-In communication systems, distance plays a vital role. It's
-particularly tricky when trying to communicate between Earth and Mars
-since the distance between the two planets can be anywhere between
-50-400 million km. The actual distance depends on where Earth and
-Mars are respectively in their orbit around the Sun [1].
-Hence, the signal needs to travel approximately aforementioned
-distance to reach Mars. We know the speed of light is 3x10 km/sec.
+In communication systems, distance plays a vital role. It is
+particularly tricky when trying to establish communication  between Earth and Mars
+since the distance between these two planets roughly varies from
+54.6 to 401 million km. This variation occurs due to orbital position of this two planets around the sun.
+However, the average distance observed 225 million km [1].
+Therefore, the signal needs to travel approximately aforementioned
+distance to reach Mars from the Earth. We know the speed of light is 3x10 km/sec.
 Assuming the signal travels at the speed of light, it takes
 approximately 3 to 30 minutes for the information to reach the other
 end.
