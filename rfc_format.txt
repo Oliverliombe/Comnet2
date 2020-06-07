@@ -1,19 +1,9 @@
-
-<Working Group Name>		                      <Initial. Lastname>
-Internet Draft		                                <Affiliation>
-Intended status: <e.g., Informational>	          June 5, 2020
-Expires: December 2020
-
-
-
-                        Uplink To Mars (Latency)
-                        draft-earth2mars-00.txt
-
+Uplink To Mars (Latency)
+draft-earth2mars-00.txt
 Status of this Memo
-  This document is a group exam assignment meant for educational
-  purposes.
+This document is a group exam assignment meant for educational
+purposes.
 It represents the consensus of the group.
-
 Abstract
 In this group work, we take a look at the challenges faced by space
 communication. More and more exploration of the Mars means better
@@ -25,13 +15,14 @@ retransmission. The retransmission is addressed in a way that, it
 should take less time to be retransmitted.
 Table of Contents
 
-1. Introduction	.................................................1
-2. Challenges	...................................................2
-  2.1. Vast Distance.............................................2
-3. Proposed Solutions............................................3
-  3.1. Forward Error Correction..................................3
-  3.2. Relay Station.............................................5
-4. References....................................................7
+1. Introduction	1
+2. Challenges	2
+2.1. Vast Distance	2
+2.2. Noise from Sun	3
+3. Proposed Solutions	3
+3.1. Forward Error Correction	3
+3.2. Relay Station	5
+4. References	7
 
 1. Introduction
 The constant growth in technology gives the ability for extreme
@@ -64,20 +55,17 @@ vast distance between Earth and Mars, noise from the Sun, long time
 delays and other disturbances. However, mainly our concerns are the
 vast distance from Earth to Mars, noise from the Sun and long time
 delays.
-2.1 Vast Distance
-In communication systems, distance plays a vital role. It is 
-particularly tricky when trying to establish communication 
-link between Earth and Mars since the average distance 
-between these two planets is 225 million km, and varies 
-between 54.6-401 million km. The distance variation between 
-Earth and Mars occurs due the orbital position around the Sun[1].
-Therefore, the signal needs to travel approximately aforementioned
-distance to reach Mars. We know the speed of light is 3x10^8 km/sec.
+2.1. Vast Distance
+In communication systems, distance plays a vital role. It's
+particularly tricky when trying to communicate between Earth and Mars
+since the distance between the two planets can be anywhere between
+50-400 million km. The actual distance depends on where Earth and
+Mars are respectively in their orbit around the Sun [1].
+Hence, the signal needs to travel approximately aforementioned
+distance to reach Mars. We know the speed of light is 3x10 km/sec.
 Assuming the signal travels at the speed of light, it takes
 approximately 3 to 30 minutes for the information to reach the other
-end[2].
-
-
+end.
 3. Proposed Solution
 Data propagation between Earth and Mars can be anywhere from 3 to 30
 minutes. This is assuming there are no errors in transmission which
@@ -136,15 +124,7 @@ between Earth and Mars. In other words, instead of 400 million
 kilometres, it will be 40 million kilometres. And this is only when the
 two planets are furthest from each other.
 4. References
-[1]	What Is The Distance Between Earth And Mars?, 
-https://www.space.com/14729-spacekids-distance-earth-mars.html
-Accessed : 2 June 2020.
-
-[2] How Does the Mars base communicate with Earth?,
-https://www.mars-one.com/faq/technology/how-does-the-mars-base-communicate-with-earth?
-Accessed : 2 June 2020.
-
-
+[1]	https://www.space.com/14729-spacekids-distance-earth-mars.html
 [2]  https://books.google.fi/books?id=PNEGt99uMBwC&pg=PP1
 [3]  https://en.wikipedia.org/wiki/Store_and_forward
 Appendix
@@ -208,7 +188,7 @@ Internet-Draft	<Title> 	June 2020
 
 
 
-     <Lastname>	Expires December 5, 2020	[Page 1]
+<Lastname>	Expires December 5, 2020	[Page 1]
 
 <Working Group Name>		<Initial. Lastname>
 Internet Draft		<Affiliation>
@@ -220,4 +200,4 @@ Expires: December 2020
 
 
 <Lastname>	Expires December 5, 2020	[Page 1]
-
+
