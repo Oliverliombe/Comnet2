@@ -1,5 +1,6 @@
-<Working Group Name>                                 <Initial. Lastname>
-Internet Draft                                             <Affiliation>
+Independent Submission                                      G. Cook, Ed.
+Internet Draft                                     Md. Abdul Khalek, Ed.
+                                                    O. Liombe Molua, Ed.
 Intended status: <e.g., Informational>                      June 7, 2020
 Expires: December 2020
 
