@@ -10,9 +10,9 @@ Expires: December 2020
                         draft-earth2mars-00.txt
 
 Status of this Memo
-This document is a group exam assignment meant for educational
-purposes.
-It represents the consensus of the group.
+  This document is a group exam assignment meant for educational
+  purposes.
+  It represents the consensus of the group.
 
 Abstract
 In this group work, we take a look at the challenges faced by space
