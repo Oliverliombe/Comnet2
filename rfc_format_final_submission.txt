@@ -137,7 +137,7 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    errors in data transmission over unreliable or noisy communication
    channels. The central idea is the sender encodes the message in a
    redundant way, most often by using an error-correcting code (ECC)
-   [2].
+   [3].
 
    FEC involves transmitting extra data so that certain errors can be
    corrected without data being retransmitted. This approach depends on
@@ -162,8 +162,7 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    technique in which information is sent to an intermediate station where
    it is kept and sent to the final destination or to another intermediate
    station. The intermediate station verifies the integrity of the message
-   before forwarding it [3].
-
+   before forwarding it [4].
 
 
 
