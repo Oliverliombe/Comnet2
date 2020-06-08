@@ -107,8 +107,8 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
 
 
    Therefore, the signal needs to travel approximately aforementioned
-   distance to reach Mars from the earth. We know the speed of light is 3x10^8 km/sec.
-   Assuming the signal travels at the speed of light, it takes
+   distance to reach Mars from the earth. We know the speed of light is 
+   3x10^8 km/sec. Assuming the signal travels at the speed of light, it takes
    approximately 3 to 30 minutes for the information to reach the other
    end[2].
 
