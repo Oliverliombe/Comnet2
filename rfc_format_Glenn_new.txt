@@ -94,8 +94,7 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    trivial matter because of the wide varieties of obstacles such as
    vast distance between Earth and Mars, noise from the Sun, long time
    delays and other disturbances. However, mainly our concerns are the
-   vast distance from Earth to Mars, noise from the Sun and long time
-   delays.
+   vast distance from Earth to Mars and long time delays.
 
 2.1.  Vast Distance
    In communication systems, distance plays a vital role. It is
@@ -139,7 +138,7 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    errors in data transmission over unreliable or noisy communication
    channels. The central idea is the sender encodes the message in a
    redundant way, most often by using an error-correcting code (ECC)
-   [2].
+   [3].
 
    FEC involves transmitting extra data so that certain errors can be
    corrected without data being retransmitted. This approach depends on
@@ -163,7 +162,7 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    technique in which information is sent to an intermediate station where
    it is kept and sent to the final destination or to another intermediate
    station. The intermediate station verifies the integrity of the message
-   before forwarding it [3].
+   before forwarding it [4].
 
 
 
@@ -198,9 +197,10 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
 
 4.  References
    [1]  https://www.space.com/14729-spacekids-distance-earth-mars.html
-   [2]  Charles Wang; Dean Sklar; Diana Johnson (Winter 2001–2002).
+   [2]  https://www.mars-one.com/faq/technology/how-does-the-mars-base-communicate-with-earth 
+   [3]  Charles Wang; Dean Sklar; Diana Johnson (Winter 2001–2002).
         “Forward Error-Correction Coding”
-   [3]  https://en.wikipedia.org/wiki/Store_and_forward
+   [4]  https://en.wikipedia.org/wiki/Store_and_forward
 
 
 
