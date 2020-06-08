@@ -110,7 +110,7 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    distance to reach Mars. We know the speed of light is 3x10 km/sec.
    Assuming the signal travels at the speed of light, it takes
    approximately 3 to 30 minutes for the information to reach the other
-   end.
+   end [2].
 Cook, et al.                  Experimental                      [Page 2]
 
 RFC NNNN               Uplink To Mars (Latency)                June 2020
