@@ -23,7 +23,7 @@ Abstract
    time, distance and Sun. Due to distance from Earth to Mars, some
    packets are damaged, and these damaged packets requires
    retransmission. The retransmission is addressed in a way that, it
-   should take less time to be retransmitted.
+   should take less time to be retransmitted from the Earth to Mars.
 
 Table of Contents
 
