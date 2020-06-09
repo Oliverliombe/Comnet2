@@ -99,10 +99,10 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
 
 2.1.  Vast Distance
 
-   In communication systems, distance plays a vital role. It's
+   In communication systems, distance plays a vital role. It is
    particularly tricky when trying to communicate between Earth and Mars
    since the distance between the two planets can be anywhere between
-   50-400 million km. The actual distance depends on where Earth and
+   50-400 million kilometers. The actual distance depends on where Earth and
    Mars are respectively in their orbit around the Sun [1].
 
    Hence, the signal needs to travel approximately aforementioned
