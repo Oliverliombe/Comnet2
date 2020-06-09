@@ -173,15 +173,16 @@ Cook, et al.                  Experimental                      [Page 3]
 RFC NNNN               Uplink To Mars (Latency)                June 2020
 
 
-   When relay stations are introduced in communications between Earth and
-   Mars, retransmissions will be with relay stations. This significantly
-   reduces the distances involved, and therefore reduces the 
-   retransmission time. That in turn will reduce the overall latency.
+   When relay stations are introduced in communications between Earth 
+   and Mars, retransmissions will be with relay stations. This 
+   significantly reduces the distances involved, and therefore reduces 
+   the retransmission time. That in turn will reduce the overall latency.
 
-   The more relay stations that can be deployed between Earth and Mars, the
-   less distance, and therefore time, there will be between
-   retransmissions. Furthermore, the reduced distance between transmissions
-   will cause fewer errors, which will reduce the need for retransmission.
+   The more relay stations that can be deployed between Earth and Mars, 
+   the less distance, and therefore time, there will be between
+   retransmissions. Furthermore, the reduced distance between 
+   transmissions will cause fewer errors, which will reduce the need for 
+   retransmission.
 
    The number of relay stations, where they will be located, and how they
    will be deployed, requires further study and is not within the scope of
