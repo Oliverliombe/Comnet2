@@ -393,5 +393,3 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
 
 Cook, et al.                  Experimental                      [Page 7]
 
-RFC NNNN               Uplink To Mars (Latency)                June 2020
-
