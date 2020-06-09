@@ -198,7 +198,8 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
 4.  References
 
    [1]  https://www.space.com/14729-spacekids-distance-earth-mars.html
-   [2]  https://www.mars-one.com/faq/technology/how-does-the-mars-base-communicate-with-earth?
+   [2]  https://www.mars-one.com/faq/technology/how-does-the-mars-base-
+        communicate-with-earth?
    [3]  Charles Wang; Dean Sklar; Diana Johnson (Winter 2001–2002).
         “Forward Error-Correction Coding”
    [4]  https://en.wikipedia.org/wiki/Store_and_forward
