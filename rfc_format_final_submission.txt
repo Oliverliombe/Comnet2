@@ -167,7 +167,6 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
 
 
 
-
 Cook, et al.                  Experimental                      [Page 3]
 
 RFC NNNN               Uplink To Mars (Latency)                June 2020
@@ -176,7 +175,8 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    When relay stations are introduced in communications between Earth 
    and Mars, retransmissions will be with relay stations. This 
    significantly reduces the distances involved, and therefore reduces 
-   the retransmission time. That in turn will reduce the overall latency.
+   the retransmission time. That in turn will reduce the overall 
+   latency.
 
    The more relay stations that can be deployed between Earth and Mars, 
    the less distance, and therefore time, there will be between
@@ -190,11 +190,11 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    maximise the efficiency.
 
    One example would be to deploy 9 relay stations. With 9 relay stations,
-   we are essentially dividing the distance into 10 chunks.  That means the
-   distance between transmission hops will only be one tenth distance
+   we are essentially dividing the distance into 10 chunks.  That means 
+   the distance between transmission hops will only be one tenth distance
    between Earth and Mars. In other words, instead of 400 million
-   kilometres, it will be 40 million kilometres. And this is only when the
-   two planets are furthest from each other.
+   kilometres, it will be 40 million kilometres. And this is only when 
+   the two planets are furthest from each other.
 
 4.  References
 
@@ -204,9 +204,6 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    [3]  Charles Wang; Dean Sklar; Diana Johnson (Winter 2001–2002).
         “Forward Error-Correction Coding”
    [4]  https://en.wikipedia.org/wiki/Store_and_forward
-
-
-
 
 
 
@@ -305,8 +302,8 @@ Peer 2
    but it is beyond the scope of this proposal as it is a physical
    transmission issue and because the teacher explained to our group,
    that:
-     "You are not expected to solve the physical layer problem. [...] How
-     the physical and link layers work is "not your problem" in all
+     "You are not expected to solve the physical layer problem. [...] 
+     How the physical and link layers work is "not your problem" in all
      aspects except for retransmissions."
 
    Thrusters use power constantly. How do you supply enough fuel? And
@@ -361,9 +358,6 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    Tampere University
    Student ID: 256293
    oliverliombe.molua@tuni.fi
-
-
-
 
 
 
