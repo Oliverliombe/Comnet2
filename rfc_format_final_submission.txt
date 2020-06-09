@@ -347,16 +347,19 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    Glenn Cook
    Tampere University
    Student ID: 293490/95279
+   glenn.cook@tuni.fi
 
 
    Md Abdul Khalek
    Tampere University
-   Student ID: 272525
+   Student ID: 272525 
+   abdul.khalek@tuni.fi
 
 
    Oliver Liombe Molua
    Tampere University
    Student ID: 256293
+   oliverliombe.molua@tuni.fi
 
 
 
