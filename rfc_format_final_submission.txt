@@ -16,14 +16,14 @@ Status of this Memo
 
 Abstract
 
-   In this group work, we take a look at the challenges faced by space
-   communication. More and more exploration of the Mars means better
-   forms for communication like, the transfer of packets from Earth to
-   Mars. Different factor affects the smooth packet transfer such as
-   time, distance and Sun. Due to distance from Earth to Mars, some
-   packets are damaged, and these damaged packets requires
-   retransmission. The retransmission is addressed in a way that, it
-   should take less time to be retransmitted from the Earth to Mars.
+   This document provides a general description on how latency can be 
+   reduced in data communications between Earth and Mars.  Due to the 
+   immense distance between the two planets, there is not much that be
+   done about the latency due to propagation delay.  So instead, this
+   proposal focuses on latency due to data retransmissions. The goal is
+   to reduce retransmissions by reducing transmission errors and also to 
+   reduce the distance between retransmissions to limit its propagation 
+   delay.
 
 Table of Contents
 
