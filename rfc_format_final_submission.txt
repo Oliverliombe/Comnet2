@@ -54,6 +54,7 @@ Table of Contents
 
 
 
+
 Cook, et al.                  Experimental                      [Page 1]
 
 RFC NNNN               Uplink To Mars (Latency)                June 2020
@@ -102,8 +103,8 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    In communication systems, distance plays a vital role. It is
    particularly tricky when trying to communicate between Earth and Mars
    since the distance between the two planets can be anywhere between
-   50-400 million kilometers. The actual distance depends on where Earth and
-   Mars are respectively in their orbit around the Sun [1].
+   50-400 million kilometers. The actual distance depends on where Earth 
+   and Mars are respectively in their orbit around the Sun [1].
 
    Hence, the signal needs to travel approximately aforementioned
    distance to reach Mars. We know the speed of light is 3x10^8 km/sec.
@@ -150,18 +151,20 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    strings: d(000, 011)=2. Given this knowledge, we can talk about
    forward error correction.
 
-   Thus, FEC error correction increases the tolerance for errors. With a
-   higher tolerance for errors, there will be less need for
+   Thus, FEC error correction increases the tolerance for errors. 
+   With a higher tolerance for errors, there will be less need for
    retransmission. And less retransmission means less latency.
 
 3.2.  Relay Stations
 
    The proposed relay stations operate in a similar way to intermediate
-   stations in store and forward. Store and forward is a telecommunications
-   technique in which information is sent to an intermediate station where
-   it is kept and sent to the final destination or to another intermediate
-   station. The intermediate station verifies the integrity of the message
-   before forwarding it [4].
+   stations in store and forward. Store and forward is a 
+   telecommunications technique in which information is sent to an 
+   intermediate station where it is kept and sent to the final 
+   destination or to another intermediate station. The intermediate 
+   station verifies the integrity of the message before forwarding it 
+   [4].
+
 
 
 
@@ -172,8 +175,8 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
 
    When relay stations are introduced in communications between Earth and
    Mars, retransmissions will be with relay stations. This significantly
-   reduces the distances involved, and therefore reduces the retransmission
-   time. That in turn will reduce the overall latency.
+   reduces the distances involved, and therefore reduces the 
+   retransmission time. That in turn will reduce the overall latency.
 
    The more relay stations that can be deployed between Earth and Mars, the
    less distance, and therefore time, there will be between
@@ -199,7 +202,6 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
    [3]  Charles Wang; Dean Sklar; Diana Johnson (Winter 2001–2002).
         “Forward Error-Correction Coding”
    [4]  https://en.wikipedia.org/wiki/Store_and_forward
-
 
 
 
