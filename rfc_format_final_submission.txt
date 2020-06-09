@@ -61,7 +61,7 @@ RFC NNNN               Uplink To Mars (Latency)                June 2020
 
 1.  Introduction
 
-   The constant growth in technology gives the ability for extreme
+   The rapid growth in technology gives the ability for extreme
    discoveries and explorations. One of this very ambitious exploration,
    is the settling of humans in Mars in the nearest future. Before now,
    lots of different space expeditions have been carried out, and this
